@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+.fa.k-sprite,
+.fa.k-sprite::before {
+  font-size: 12px;
+  line-height: 12px;
+}
+

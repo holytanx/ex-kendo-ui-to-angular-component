@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import '@progress/kendo-ui'
+import { TreeViewModule } from './modules/ta-treeview/ta-treeview.modules';
+import { WrapperComponent } from './modules/wrapper/wrapper.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WrapperComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TreeViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

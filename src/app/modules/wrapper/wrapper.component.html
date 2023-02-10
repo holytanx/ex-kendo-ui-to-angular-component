@@ -1,0 +1,3 @@
+
+<input class="k-textbox" (change)="onInput($event.target.value)" [value]="search">
+<app-ta-treeview [treeItems]="resources" [textFields]="fields" [filter]="search" (selectedItem)="onSelectItem($event)"></app-ta-treeview>
