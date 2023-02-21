@@ -1,0 +1,8 @@
+<form [formGroup]="myForm" (domChange)="onDomChange($event)">
+  <kendo-combobox [data]="listItems" formControlName="type" (valueChange)="onChangeType()">
+  </kendo-combobox>
+  <kendo-combobox *ngIf="myForm.get('type').value == 'Dropdown'" [data]="subItems" formControlName="value">
+  </kendo-combobox>
+  <kendo-datepicker *ngIf="myForm.get('type').value == 'Date'" [format]="'dd/MM/yyyy'" (valueChange)="onChangeSubtype($event)"
+    formControlName="value"></kendo-datepicker>
+</form>

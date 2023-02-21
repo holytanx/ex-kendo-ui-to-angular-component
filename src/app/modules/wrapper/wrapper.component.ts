@@ -1,8 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 
-
-declare var kendo: any;
-
 @Component({
   selector: "app-wrapper",
   templateUrl: "./wrapper.component.html",
